@@ -190,6 +190,26 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
 @media(min-width:1024px){body{font-size:17.5px}.top{height:72px;padding:0 24px;gap:18px}:root{--hh:72px}.brand{font-size:24px}.nav{display:flex;gap:2px}.burger{display:none}.top .tc{min-height:48px;padding:0 20px;font-size:15px}.wrap{padding:0 40px}section{padding-top:112px}.hero{padding:16px 16px 0}.hero-in{padding:40px 74px 0 40px;min-height:720px}.notes{position:absolute;left:0;right:50px;top:300px;grid-template-columns:1fr 1fr;padding:0 40px;margin:0}.nt{max-width:230px;font-size:15.5px}.nt:last-child{margin-left:auto}.hero .btns{margin-top:18px}.collage{height:400px;max-width:760px;margin:0 auto}.collage .ccv{width:300px;margin-left:-150px;bottom:-110px}.collage .cla{width:270px;left:0;bottom:10px}.collage .cpen{width:190px;right:40px;top:60px}.collage .cle{width:170px;right:-30px;bottom:-10px}.collage .cst{width:130px;left:calc(50% + 90px);bottom:50px}.strip{display:grid;place-items:center;position:absolute;right:0;top:0;bottom:0;width:62px;background:var(--sage);color:#fff;border-radius:0 22px 22px 0;writing-mode:vertical-rl;font-size:13px;letter-spacing:.14em}.band{padding:90px 0 96px;margin-top:112px}.per{grid-template-columns:repeat(4,1fr)}.tiles{grid-template-columns:repeat(4,1fr)}.tile{aspect-ratio:1/.8}.stage-in{padding:30px 36px 16px;gap:18px}.step{margin-top:104px}.un{padding:54px 50px}.un svg.art{width:250px}.un p:last-of-type{padding-bottom:0}.cheat{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(6,1fr)}.st{min-height:170px}.st b{font-size:46px}.ff{grid-template-columns:repeat(4,1fr)}.split,.buy{margin-top:112px}.revs{grid-template-columns:repeat(2,1fr)}.dock{left:50%;right:auto;translate:-50% 130%;width:560px}.dock.on{translate:-50% 0}.road{grid-template-columns:repeat(2,1fr)}.story{font-size:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
+/* topic visuals */
+.vz{margin:24px 0 0;background:var(--paper);border-radius:var(--r);padding:16px;display:grid;gap:18px;transition:translate .25s,box-shadow .25s}
+.vz:hover{translate:0 -3px;box-shadow:0 10px 24px rgba(40,50,46,.08)}
+.vz.s{background:var(--sage-t)}.vz.w{background:var(--wine-t)}
+.vz-a{width:100%;height:auto;border-radius:12px}
+.vz-o{position:relative;min-width:0}
+.vz .ov{position:absolute;translate:-50% -50%;font-weight:600;font-size:clamp(13px,1.7vw,16px);line-height:1;white-space:nowrap;hyphens:none;color:var(--ink)}
+.vz .ov.w{color:#fff}
+.vz-c{display:grid;gap:10px;align-content:center;min-width:0}
+.vz-t{font-family:Philosopher,Georgia,serif;font-weight:700;font-size:clamp(21px,2.4vw,26px);line-height:1.18;hyphens:manual}
+.vz-r{display:flex;align-items:center;gap:12px;font-size:15.5px;line-height:1.35;color:var(--mute)}
+.vz-r .tr,.vz-r .tw{color:var(--ink);font-size:16.5px}
+.vz-r .tw{white-space:normal}
+.vz-k{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;flex:none;font-weight:600;font-size:15px;line-height:1;color:#fff;background:var(--sage)}
+.vz-k.w{background:var(--wine)}
+.vz-k .ic{font-size:20px}
+.vz .bob{transform-box:fill-box;transform-origin:50% 50%;animation:vz-bob 3.4s ease-in-out infinite}
+@keyframes vz-bob{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@media(min-width:760px){.vz{grid-template-columns:1.3fr 1fr;align-items:center;gap:34px;padding:24px}}
+
 .rshots{columns:1;column-gap:11px;margin-top:26px}.rs{break-inside:avoid;margin:0 0 11px;background:#fff;color:var(--ink);border-radius:12px;overflow:hidden;transition:translate .25s}.rs:hover{translate:0 -3px}.rs img{width:100%}.rs span{display:block;padding:9px 14px 11px;font-weight:600;letter-spacing:.08em}.rs.more{display:none}
 @media(min-width:640px){.rshots{columns:2}}@media(min-width:1024px){.rshots{columns:3}}
 </style>
@@ -349,6 +369,27 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
       <div class="formula"><span>корень</span><span>сколько</span><span>чьё</span><span>падеж</span></div>
       <div class="dots"></div>
     </div></div>
+    <figure class="vz" data-vz>
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 260" role="img" aria-label="Поезд: локомотив-корень и три вагона, порядок вагонов всегда один">
+          <rect width="640" height="260" fill="#E6EFEB"/>
+          <path d="M0 214H640" stroke="#fff" stroke-width="14"/><path d="M0 214H640" stroke="#2F3532" stroke-width="4" stroke-dasharray="20 14"/>
+          <g data-v><rect x="20" y="88" width="214" height="104" rx="14" fill="#5F8E7E"/><rect x="176" y="56" width="26" height="36" rx="6" fill="#2F3532"/><rect x="34" y="104" width="40" height="30" rx="5" fill="#E6EFEB"/><g fill="#2F3532"><circle cx="66" cy="200" r="15"/><circle cx="188" cy="200" r="15"/></g></g>
+          <g data-v><rect x="246" y="100" width="118" height="92" rx="12" fill="#6E94BF"/><g fill="#2F3532"><circle cx="276" cy="200" r="14"/><circle cx="334" cy="200" r="14"/></g></g>
+          <g data-v><rect x="376" y="100" width="118" height="92" rx="12" fill="#8F6FA8"/><g fill="#2F3532"><circle cx="406" cy="200" r="14"/><circle cx="464" cy="200" r="14"/></g></g>
+          <g data-v><rect x="506" y="100" width="118" height="92" rx="12" fill="#A5343B"/><g fill="#2F3532"><circle cx="536" cy="200" r="14"/><circle cx="594" cy="200" r="14"/></g></g>
+        </svg>
+        <span class="ov w" style="left:20%;top:55%" lang="tr">deneyim</span>
+        <span class="ov w" style="left:47.700%;top:56%" lang="tr">ler</span>
+        <span class="ov w" style="left:68%;top:56%" lang="tr">im</span>
+        <span class="ov w" style="left:88.300%;top:56%" lang="tr">i</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">Порядок вагонов не меняется</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#arrow"/></svg></span><span>корень, сколько, чьё, падеж</span></div>
+        <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#tick"/></svg></span><span><span class="tw" lang="tr"><i class="r">deneyim</i><i class="pl">ler</i><i class="p">im</i><i class="c">i</i></span></span></div>
+      </div>
+    </figure>
     <div class="chk" data-a="2"><p class="q">Какой вагон значит мои в слове sorumluluklarımı?</p><div class="opts"><button class="opt" lang="tr">sorumluluk</button><button class="opt" lang="tr">lar</button><button class="opt" lang="tr">ım</button><button class="opt" lang="tr">ı</button></div><div class="why" data-why="sorumluluk это корень, lar значит их много, ım значит мои, ı показывает кого, что."><p></p><div class="ex" style="background:var(--mint-t);margin-top:10px"><button class="say" data-say="Sorumluluklarımı yazdım." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr">Sorumluluklarımı yazdım.</p><p class="ru">Я написала свои обязанности.</p></div></div></div></div>
   </div>
 
@@ -370,6 +411,24 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <div class="exs c2">
       <div class="ex"><button class="say" data-say="tasarımcı" aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">tasarım</i><i class="v">cı</i></p><p class="ru">дизайнер</p></div></div><div class="ex"><button class="say" data-say="yazılımcı" aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">yazılım</i><i class="v">cı</i></p><p class="ru">программист</p></div></div><div class="ex"><button class="say" data-say="muhasebeci" aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">muhasebe</i><i class="v">ci</i></p><p class="ru">бухгалтер</p></div></div><div class="ex"><button class="say" data-say="aşçı" aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">aş</i><i class="v">çı</i></p><p class="ru">повар</p></div></div>
     </div>
+    <figure class="vz s" data-vz>
+      <svg class="vz-a" viewBox="0 0 640 300" role="img" aria-label="Цепочка: корень, потом человек в колпаке повара, потом знак профессии">
+        <rect width="640" height="300" fill="#E6EFEB"/>
+        <path d="M0 236H640" stroke="#8FB0A4" stroke-width="6"/>
+        <g font-family="Montserrat,sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central">
+          <g data-v><rect x="30" y="134" width="110" height="102" rx="14" fill="#5F8E7E"/><text x="85" y="184" font-size="52" fill="#fff">aş</text></g>
+          <g data-v><rect x="160" y="150" width="76" height="52" rx="26" fill="#A5343B"/><text x="198" y="176" font-size="28" fill="#fff">çı</text></g>
+          <g data-v><path d="M250 236c2-44 18-66 42-66s40 22 42 66z" fill="#456D5F"/><circle cx="292" cy="134" r="28" fill="#F7E7E6"/><path d="M256 104c-16-30 22-46 36-30 14-16 52 0 36 30z" fill="#fff"/><rect x="256" y="102" width="72" height="16" rx="6" fill="#fff"/><path d="M280 196h24" stroke="#fff" stroke-width="5" stroke-linecap="round"/></g>
+          <g data-v><rect x="346" y="150" width="86" height="52" rx="26" fill="#A5343B"/><text x="389" y="176" font-size="28" fill="#fff">lık</text></g>
+          <g data-v><path d="M500 186l-22 50 34-14 34 14-22-50z" fill="#A5343B"/><circle cx="512" cy="142" r="56" fill="#F7EBC8"/><circle cx="512" cy="142" r="56" fill="none" stroke="#A5343B" stroke-width="6"/><path d="M512 110l9.500 21 22.500 2.500-17 15 5 22.500-20-12-20 12 5-22.500-17-15 22.500-2.500z" fill="#A5343B"/></g>
+        </g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Один вагон делает человека, другой занятие</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#person"/></svg></span><span><span class="tw" lang="tr"><i class="r">aş</i><i class="v">çı</i></span> повар</span></div>
+        <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#medal"/></svg></span><span><span class="tw" lang="tr"><i class="r">aşçı</i><i class="v">lık</i></span> профессия повара</span></div>
+      </div>
+    </figure>
     <div class="chk" data-a="0"><p class="q">Какое слово написано верно: занятие руководителя?</p><div class="opts"><button class="opt" lang="tr">yöneticilik</button><button class="opt" lang="tr">yöneticilık</button><button class="opt" lang="tr">yöneticiluk</button></div><div class="why" data-why="Последняя гласная в yönetici это i. После i вагон выбирает i."><p></p><div class="ex" style="background:var(--mint-t);margin-top:10px"><button class="say" data-say="Yöneticilik yaptım." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr">Yöneticilik yaptım.</p><p class="ru">Я работала руководителем.</p></div></div></div></div>
   </div>
 
@@ -406,6 +465,29 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <p class="lead">Выбери годы. Хвост посчитается сам.</p>
     <div class="sw" id="yF"></div><div class="sw" id="yT" style="margin-top:7px"></div>
     <div class="bld-o" id="yO"></div>
+    <figure class="vz" data-vz>
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 310" role="img" aria-label="Две линии времени: одна закрыта с обеих сторон, другая начинается и идёт дальше">
+          <rect width="640" height="310" fill="#E6EFEB"/>
+          <path d="M490 34V284" stroke="#8FB0A4" stroke-width="4" stroke-dasharray="4 12" stroke-linecap="round"/>
+          <path d="M100 102H420" stroke="#5F8E7E" stroke-width="20" stroke-linecap="round" data-draw/>
+          <g data-v><path d="M84 66v72" stroke="#456D5F" stroke-width="10" stroke-linecap="round"/></g>
+          <g data-v><path d="M436 66v72" stroke="#456D5F" stroke-width="10" stroke-linecap="round"/></g>
+          <path d="M436 228H596" stroke="#A5343B" stroke-width="20" stroke-linecap="round" data-draw/>
+          <g data-v><path d="M590 200l36 28-36 28z" fill="#A5343B"/></g>
+          <g data-v><circle cx="436" cy="228" r="20" fill="#fff" stroke="#A5343B" stroke-width="8"/></g>
+        </svg>
+        <span class="ov" style="left:13.200%;top:12%" lang="tr">2021'den</span>
+        <span class="ov" style="left:68%;top:12%" lang="tr">2023'e kadar</span>
+        <span class="ov" style="left:68%;top:90%" lang="tr">2023'ten beri</span>
+        <span class="ov" style="left:89.500%;top:50%">сейчас</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">Один отрезок закрыт, другой ещё идёт</p>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#cal"/></svg></span><span><span class="tw" lang="tr"><i class="r">2021</i><i class="c">'den</i> <i class="r">2023</i><i class="c">'e</i> <i class="r">kadar</i> <i class="r">çalış</i><i class="t">tı</i><i class="e">m</i></span></span></div>
+        <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#clock"/></svg></span><span><span class="tw" lang="tr"><i class="r">2023</i><i class="c">'ten</i> <i class="r">beri</i> <i class="r">çalış</i><i class="t">ıyor</i><i class="e">um</i></span></span></div>
+      </div>
+    </figure>
     <div class="chk" data-a="1"><p class="q">2023 читается yirmi üç. Какой хвост у откуда?</p><div class="opts"><button class="opt" lang="tr">2023'den</button><button class="opt" lang="tr">2023'ten</button><button class="opt" lang="tr">2023'dan</button></div><div class="why" data-why="Üç заканчивается на глухую ç, поэтому не den, а ten."><p></p><div class="ex" style="background:var(--mint-t);margin-top:10px"><button class="say" data-say="2023'ten beri çalışıyorum." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr">2023'ten beri çalışıyorum.</p><p class="ru">Работаю с 2023 года.</p></div></div></div></div>
   </div>
 
@@ -419,6 +501,26 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
       <div class="ex"><button class="say" data-say="Üniversiteden mezun oldum." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">Üniversite</i><i class="c">den</i> <i class="r">mezun</i> <i class="r">ol</i><i class="t">du</i><i class="e">m</i>.</p><p class="ru">Я окончила университет.</p></div></div>
     </div>
     <div class="stripn rv"><span class="bd"><svg class="ic"><use href="#plus"/></svg></span><span><span class="tw" lang="tr"><i class="r">sahi</i><i class="s">b</i><i class="e">im</i></span> просит вагон куда: <span class="tw" lang="tr"><i class="r">deneyim</i><i class="c">e</i></span>. А <span class="tw" lang="tr"><i class="r">mezun</i> <i class="r">ol</i></span> просит вагон откуда: <span class="tw" lang="tr"><i class="r">üniversite</i><i class="c">den</i></span>.</span></div>
+    <figure class="vz w" data-vz>
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 400" role="img" aria-label="Стол Айше-ханым: стопка писем, чашка чая и папка с отказами, резюме падает в папку">
+          <rect width="640" height="400" fill="#F7E7E6"/>
+          <rect y="304" width="640" height="96" fill="#456D5F"/>
+          <rect y="296" width="640" height="16" fill="#5F8E7E"/>
+          <g data-v><g fill="#fff" stroke="#E6E6E2" stroke-width="2"><rect x="40" y="262" width="150" height="34" rx="3"/><rect x="46" y="238" width="140" height="28" rx="3"/><rect x="38" y="214" width="150" height="28" rx="3"/><rect x="48" y="192" width="136" height="26" rx="3"/><rect x="42" y="170" width="146" height="26" rx="3"/><rect x="50" y="150" width="130" height="24" rx="3"/></g></g>
+          <g data-v><path d="M226 236h76v30c0 20-16 30-38 30s-38-10-38-30z" fill="#fff"/><path d="M302 244h14a14 14 0 0 1 0 28h-16" fill="none" stroke="#fff" stroke-width="9"/><ellipse cx="264" cy="238" rx="32" ry="7" fill="#94551F"/></g>
+          <g data-v><path d="M398 148a14 14 0 0 1 14-14h62l18 20h106a14 14 0 0 1 14 14v122a14 14 0 0 1-14 14H412a14 14 0 0 1-14-14z" fill="#A5343B"/></g>
+          <g data-v><g transform="rotate(14 344 142)"><rect x="296" y="62" width="100" height="136" rx="6" fill="#fff"/><rect x="310" y="78" width="30" height="34" rx="4" fill="#8FB0A4"/><rect x="348" y="82" width="36" height="7" rx="3.500" fill="#C4CAC6"/><rect x="348" y="98" width="28" height="7" rx="3.500" fill="#C4CAC6"/><rect x="310" y="126" width="72" height="9" rx="4.500" fill="#A5343B"/><rect x="310" y="146" width="72" height="7" rx="3.500" fill="#C4CAC6"/><rect x="310" y="162" width="52" height="7" rx="3.500" fill="#C4CAC6"/></g></g>
+          <path d="M404 110c24-8 46 2 54 28" fill="none" stroke="#A5343B" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
+        </svg>
+        <span class="ov w" style="left:78.500%;top:56%" lang="tr">olumsuz</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">Сорок писем и остывший чай</p>
+        <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#cross"/></svg></span><span><span class="tw" lang="tr"><i class="r">Müdür</i> <i class="r">gibi</i> <i class="r">çalış</i><i class="t">tı</i><i class="e">m</i></span> как бы руководитель</span></div>
+        <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#tick"/></svg></span><span><span class="tw" lang="tr"><i class="r">Müdür</i> <i class="r">olarak</i> <i class="r">çalış</i><i class="t">tı</i><i class="e">m</i></span> руководителем</span></div>
+      </div>
+    </figure>
     <div class="chk" data-a="1"><p class="q">Какой вариант верный?</p><div class="opts"><button class="opt" lang="tr">Deneyimi sahibim</button><button class="opt" lang="tr">Deneyime sahibim</button><button class="opt" lang="tr">Deneyimde sahibim</button></div><div class="why" data-why="sahip olmak всегда с вагоном куда: -e / -a."><p></p><div class="ex" style="background:var(--mint-t);margin-top:10px"><button class="say" data-say="Beş yıllık deneyime sahibim." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr">Beş yıllık deneyime sahibim.</p><p class="ru">У меня пятилетний опыт.</p></div></div></div></div>
   </div>
 
@@ -450,6 +552,26 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     </div>
   </div>
 
+    <figure class="vz w" data-vz>
+      <div class="vz-o">
+        <svg class="vz-a" viewBox="0 0 640 320" role="img" aria-label="Глагол с хвостом стоит перед зданием компании и описывает его">
+          <rect width="640" height="320" fill="#F7E7E6"/>
+          <rect y="268" width="640" height="52" fill="#E6EFEB"/>
+          <g data-v><rect x="20" y="118" width="110" height="74" rx="10" fill="#5F8E7E"/><rect x="134" y="118" width="96" height="74" rx="10" fill="#7F6BB0"/><rect x="234" y="118" width="84" height="74" rx="10" fill="#8F6FA8"/></g>
+          <path d="M332 155h52" stroke="#A5343B" stroke-width="8" stroke-linecap="round" data-draw/><g data-v><path d="M380 134l26 21-26 21z" fill="#A5343B"/></g>
+          <g data-v><rect x="440" y="44" width="170" height="224" rx="8" fill="#456D5F"/><g fill="#F7EBC8"><rect x="462" y="66" width="40" height="34" rx="4"/><rect x="520" y="66" width="40" height="34" rx="4"/><rect x="462" y="116" width="40" height="34" rx="4"/><rect x="520" y="116" width="40" height="34" rx="4"/><rect x="462" y="166" width="40" height="34" rx="4"/><rect x="520" y="166" width="40" height="34" rx="4"/></g><rect x="500" y="214" width="50" height="54" rx="4" fill="#2F3532"/></g>
+          <rect x="456" y="28" width="138" height="30" rx="8" fill="#fff"/>
+        </svg>
+        <span class="ov w" style="left:11.700%;top:48.500%" lang="tr">çalış</span>
+        <span class="ov w" style="left:28.400%;top:48.500%" lang="tr">tığ</span>
+        <span class="ov w" style="left:43.100%;top:48.500%" lang="tr">ım</span>
+        <span class="ov" style="left:81.300%;top:13.500%" lang="tr">şirket</span>
+      </div>
+      <div class="vz-c">
+        <p class="vz-t">Сначала в которой, потом компания</p>
+        <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#bld"/></svg></span><span><span class="tw" lang="tr"><i class="r">çalış</i><i class="v">tığ</i><i class="p">ım</i> <i class="r">şirket</i></span></span></div>
+      </div>
+    </figure>
   <div class="step" id="s8">
     <div class="step-h"><span class="num">8</span><h3>Сделав <span class="w">и чтобы</span></h3></div>
     <p class="lead">Два хвоста делают из резюме не список, а результат. <span class="tw" lang="tr"><i class="v">arak</i></span> значит сделав что-то. <span class="tw" lang="tr"><i class="v">mak</i> <i class="r">için</i></span> значит чтобы.</p>
@@ -477,6 +599,32 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
       <div class="ex"><button class="say" data-say="Olumlu dönüşünüzü bekler, saygılar sunarım." aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">Olumlu</i> <i class="r">dönüş</i><i class="p">ünüz</i><i class="c">ü</i> <i class="r">bekle</i><i class="t">r</i>, <i class="r">saygı</i><i class="pl">lar</i> <i class="r">sun</i><i class="t">ar</i><i class="e">ım</i>.</p><p class="ru">Жду положительного ответа, с уважением.</p></div></div>
       <div class="ex"><button class="say" data-say="Saygılarımla," aria-label="Послушать"><svg class="ic"><use href="#sound"/></svg></button><div><p class="tr" lang="tr"><i class="r">Saygı</i><i class="pl">lar</i><i class="p">ım</i><i class="c">la</i>,</p><p class="ru">С уважением,</p></div></div>
     </div>
+    <figure class="vz s" data-vz>
+      <svg class="vz-a" viewBox="0 0 640 420" role="img" aria-label="Письмо работодателю по частям: обращение, резюме во вложении, вежливый финал, подпись">
+        <rect width="640" height="420" fill="#E6EFEB"/>
+        <g data-v><path d="M86 112h300v250H86z" fill="#A5343B"/><path d="M86 112l150 110 150-110z" fill="#8B2930"/></g>
+        <g data-v><g transform="rotate(4 400 214)"><rect x="244" y="36" width="320" height="350" rx="10" fill="#fff"/>
+          <rect x="274" y="66" width="136" height="16" rx="8" fill="#5F8E7E"/>
+          <rect x="274" y="116" width="260" height="12" rx="6" fill="#C4CAC6"/><rect x="274" y="140" width="214" height="12" rx="6" fill="#C4CAC6"/>
+          <rect x="274" y="186" width="260" height="12" rx="6" fill="#C4CAC6"/><rect x="274" y="210" width="238" height="12" rx="6" fill="#C4CAC6"/>
+          <rect x="274" y="256" width="174" height="16" rx="8" fill="#A5343B"/>
+          <path d="M280 330c16-26 28-30 34-12s18 18 28-4 22-16 30 12" fill="none" stroke="#2F3532" stroke-width="5" stroke-linecap="round" data-draw/>
+        </g></g>
+        <g font-family="Montserrat,sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="central" fill="#fff">
+          <g data-v><circle cx="594" cy="86" r="26" fill="#5F8E7E"/><text x="594" y="87" font-size="32">1</text></g>
+          <g data-v><circle cx="594" cy="168" r="26" fill="#5F8E7E"/><text x="594" y="169" font-size="32">2</text></g>
+          <g data-v><circle cx="594" cy="266" r="26" fill="#A5343B"/><text x="594" y="267" font-size="32">3</text></g>
+          <g data-v><circle cx="594" cy="350" r="26" fill="#A5343B"/><text x="594" y="351" font-size="32">4</text></g>
+        </g>
+      </svg>
+      <div class="vz-c">
+        <p class="vz-t">Письмо от обращения до подписи</p>
+        <div class="vz-r"><span class="vz-k">1</span><span><span class="tw" lang="tr"><i class="r">Sayın</i> <i class="r">Yetkili</i>,</span></span></div>
+        <div class="vz-r"><span class="vz-k">2</span><span><span class="tw" lang="tr"><i class="r">Özgeçmiş</i><i class="p">im</i><i class="c">i</i> <i class="r">ek</i><i class="c">te</i> <i class="r">bul</i><i class="v">abilir</i><i class="e">siniz</i>.</span></span></div>
+        <div class="vz-r"><span class="vz-k w">3</span><span><span class="tw" lang="tr"><i class="r">Olumlu</i> <i class="r">dönüş</i><i class="p">ünüz</i><i class="c">ü</i> <i class="r">bekle</i><i class="t">r</i>, <i class="r">saygı</i><i class="pl">lar</i> <i class="r">sun</i><i class="t">ar</i><i class="e">ım</i>.</span></span></div>
+        <div class="vz-r"><span class="vz-k w">4</span><span><span class="tw" lang="tr"><i class="r">Saygı</i><i class="pl">lar</i><i class="p">ım</i><i class="c">la</i>,</span></span></div>
+      </div>
+    </figure>
   </div>
 
   <div class="step" id="s10">
@@ -564,6 +712,25 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <p class="rv">Делает глоток. Папка <em lang="tr">olumsuz</em> остаётся голодной.</p>
     <p class="punch rv">Айше-ханым тянется к телефону.</p>
   </div>
+  <figure class="vz w" data-vz>
+    <div class="vz-o">
+      <svg class="vz-a" viewBox="0 0 640 380" role="img" aria-label="Стол: пустая папка с отказами, чашка чая и телефон, снятая трубка">
+        <rect width="640" height="380" fill="#F7E7E6"/>
+        <rect y="282" width="640" height="98" fill="#456D5F"/>
+        <rect y="274" width="640" height="16" fill="#5F8E7E"/>
+        <g data-v><path d="M44 176a14 14 0 0 1 14-14h60l18 20h104a14 14 0 0 1 14 14v84H44z" fill="#A5343B"/><rect x="44" y="196" width="210" height="84" rx="10" fill="#8B2930"/></g>
+        <g data-v><path d="M290 216h70v30c0 18-14 28-35 28s-35-10-35-28z" fill="#fff"/><path d="M360 224h13a13 13 0 0 1 0 26h-15" fill="none" stroke="#fff" stroke-width="8"/><ellipse cx="325" cy="218" rx="30" ry="6" fill="#94551F"/></g>
+        <g data-v><path d="M430 274c0-36 24-58 86-58s86 22 86 58z" fill="#2F3532"/><circle cx="516" cy="244" r="24" fill="#F7E7E6"/><circle cx="516" cy="244" r="8" fill="#2F3532"/></g>
+        <g class="bob"><g transform="rotate(-10 516 150)"><path d="M428 138c20-16 56-22 88-22s68 6 88 22c8 7 6 28-10 28h-24c-10 0-12-8-12-18-14-6-70-6-84 0 0 10-2 18-12 18h-24c-16 0-18-21-10-28z" fill="#A5343B"/></g></g>
+      </svg>
+      <span class="ov w" style="left:23.400%;top:62%" lang="tr">olumsuz</span>
+    </div>
+    <div class="vz-c">
+      <p class="vz-t">Папка <span lang="tr">olumsuz</span> остаётся голодной</p>
+      <div class="vz-r"><span class="vz-k w"><svg class="ic"><use href="#brief"/></svg></span><span><span class="tw" lang="tr"><i class="r">Müdür</i> <i class="r">olarak</i> <i class="r">çalış</i><i class="t">tı</i><i class="e">m</i></span></span></div>
+      <div class="vz-r"><span class="vz-k"><svg class="ic"><use href="#tick"/></svg></span><span><span class="tw" lang="tr"><i class="r">Üç</i> <i class="r">yıl</i><i class="v">lık</i> <i class="r">deneyim</i><i class="c">e</i> <i class="r">sahi</i><i class="s">b</i><i class="e">im</i></span></span></div>
+    </div>
+  </figure>
   <div class="cheat">
     <div class="ch rv"><h4><svg class="ic"><use href="#arrow"/></svg>Поезд</h4><p>Корень, сколько, чьё, падеж.</p></div>
     <div class="ch rv"><h4><svg class="ic"><use href="#cal"/></svg>Годы</h4><p><span class="tw" lang="tr">-den ... -e kadar</span> и <span class="tw" lang="tr">-den beri</span>.</p></div>
@@ -825,6 +992,7 @@ if(ANIM){
   $$('.count').forEach(function(c){var to=+c.dataset.to,o={v:0};ScrollTrigger.create({trigger:c,start:'top 92%',once:true,onEnter:function(){G.to(o,{v:to,duration:1.5,ease:'power2.out',onUpdate:function(){c.textContent=Math.round(o.v)}})}})});
   var bars=$$('#bars i');if(bars.length){G.fromTo(bars,{scaleY:.04},{scaleY:1,duration:.9,stagger:.12,ease:'power2.out',scrollTrigger:{trigger:'#bars',start:'top 86%',once:true}})}
   G.from('.collage svg',{y:40,duration:.8,stagger:.1,ease:'power2.out'});
+  $$('[data-vz]').forEach(function(f){var ps=$$('[data-v]',f),ds=$$('[data-draw]',f);ds.forEach(function(d){d.setAttribute('pathLength','1')});ScrollTrigger.create({trigger:f,start:'top 84%',once:true,onEnter:function(){if(ps.length)G.fromTo(ps,{opacity:0,y:20,scale:.92},{opacity:1,y:0,scale:1,duration:.55,stagger:.1,ease:'back.out(1.4)',transformOrigin:'50% 50%',clearProps:'transform,opacity'});ds.forEach(function(d,i){G.fromTo(d,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:.9,delay:.2+i*.14,ease:'power2.out',clearProps:'strokeDasharray,strokeDashoffset'})})}})});
   addEventListener('load',function(){ScrollTrigger.refresh()});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){ScrollTrigger.refresh()});
 }
 }
