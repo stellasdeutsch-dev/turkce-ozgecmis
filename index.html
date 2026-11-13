@@ -231,6 +231,18 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
   .mst .wrap{grid-template-columns:minmax(0,320px) minmax(0,1fr);justify-items:stretch;align-items:end;gap:52px}
   .mst-t{padding-bottom:56px}
 }
+
+/* photos */
+.collage img{position:absolute;height:auto}.collage img.ccv{width:240px;left:50%;margin-left:-120px;bottom:0;rotate:0deg}.collage img.cla{width:150px;left:-12px;bottom:0}.collage img.cle{width:140px;right:-10px;bottom:0}.collage svg.cst{left:auto;right:16px;bottom:auto;top:24px;width:76px}
+.tp-p img{position:absolute;left:50%;translate:-50% 0;bottom:0;height:152px;width:auto;max-width:94%;object-fit:contain;object-position:50% 100%}
+.pc{min-height:360px}.pc img.cut{position:absolute;left:50%;translate:-50% 0;bottom:0;height:200px;width:auto;max-width:100%;object-fit:contain;object-position:50% 100%}
+.split-r img.s1{position:absolute;width:250px;height:auto;left:50%;margin-left:-125px;bottom:14px}
+.buy-r{min-height:360px}.buy-r img.b1{position:absolute;height:92%;width:auto;left:50%;translate:-50% 0;bottom:0}.buy-r img.b2{position:absolute;width:170px;height:auto;right:4%;bottom:4%}
+.un img.cut{position:absolute;right:-14px;bottom:0;width:min(62%,380px);height:auto}
+@media(min-width:760px){.split-r img.s1{width:400px;margin-left:-200px;bottom:12%}.buy-r img.b2{width:240px}}
+@media(min-width:1024px){.collage img.ccv{width:400px;margin-left:-200px}.collage img.cla{width:300px;left:10px}.collage img.cle{width:270px;right:20px}.collage svg.cst{top:40px;right:60px;width:110px}.pc{min-height:400px}.pc img.cut{height:230px}}
+.un h2,.un p{position:relative;z-index:1}
+@media(min-width:1024px){.un h2,.un p{max-width:58%}}
 </style>
 <script defer src="assets/gsap-bundle.min.js"></script>
 </head>
@@ -311,7 +323,7 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <div class="nt"><div class="bd"><svg class="ic"><use href="#pen"/></svg></div>Готовое письмо с твоими данными в конце разбора</div>
   </div>
   <div class="btns"><a class="btn w" href="#chto">Начать разбор <svg class="ic"><use href="#arrow"/></svg></a></div>
-  <div class="collage" aria-hidden="true"><svg class="art cla" viewBox="0 0 280 190" aria-hidden="true"><use href="#a-lap"/></svg><svg class="art cpen" viewBox="0 0 220 90" aria-hidden="true"><use href="#a-pen"/></svg><svg class="art cle" viewBox="0 0 200 240" aria-hidden="true"><use href="#a-leaf"/></svg><svg class="art ccv" viewBox="0 0 200 260" aria-hidden="true"><use href="#a-cv"/></svg><svg class="art cst" viewBox="0 0 180 180" aria-hidden="true"><use href="#a-stamp"/></svg></div>
+  <div class="collage" aria-hidden="true"><img class="cla" src="media/obj-laptop.webp" alt="" width="900" height="522" loading="lazy" decoding="async"><img class="cle" src="media/obj-books.webp" alt="" width="900" height="490" loading="lazy" decoding="async"><img class="ccv" src="media/woman-chair.webp" alt="" width="871" height="900" fetchpriority="high" decoding="async"><svg class="art cst" viewBox="0 0 180 180" aria-hidden="true"><use href="#a-stamp"/></svg></div>
   <div class="strip" aria-hidden="true">листай ниже</div>
 </div></section>
 
@@ -335,22 +347,22 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
   <h2 class="c">Что будет <span>в этом гайде</span></h2>
   <p class="lead c">Двенадцать кубиков. Каждый закрывает конкретную дыру в резюме.</p>
   <div class="topics">
-    <a class="tp rv" href="#s1"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#plus"/></svg></span><svg class="art " viewBox="0 0 200 260" aria-hidden="true"><use href="#a-cv"/></svg></div><h4>Слово-поезд и суффиксы профессий</h4><p>Как из одного корня получается должность</p></a>
-    <a class="tp rv" href="#s4"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#cal"/></svg></span><svg class="art " viewBox="0 0 240 150" aria-hidden="true"><use href="#a-books"/></svg></div><h4>Годы работы</h4><p>Почему 2023'ten, но 2021'den</p></a>
-    <a class="tp rv" href="#s5"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#brief"/></svg></span><svg class="art " viewBox="0 0 280 190" aria-hidden="true"><use href="#a-lap"/></svg></div><h4>Как написать про опыт</h4><p>olarak вместо gibi и "имею опыт"</p></a>
-    <a class="tp rv" href="#s7"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#bld"/></svg></span><svg class="art " viewBox="0 0 220 90" aria-hidden="true"><use href="#a-pen"/></svg></div><h4>Компания, в которой</h4><p>Слова который в турецком нет</p></a>
-    <a class="tp rv" href="#s9"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#mail"/></svg></span><svg class="art " viewBox="0 0 240 170" aria-hidden="true"><use href="#a-env"/></svg></div><h4>Тон письма</h4><p>От просто вежливо до совсем официально</p></a>
-    <a class="tp rv" href="#s12"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#pen"/></svg></span><svg class="art " viewBox="0 0 220 180" aria-hidden="true"><use href="#a-plane"/></svg></div><h4>Твоё письмо</h4><p>Подставь данные и забирай текст</p></a>
+    <a class="tp rv" href="#s1"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#plus"/></svg></span><img class="cut" src="media/obj-books.webp" alt="" width="900" height="490" loading="lazy" decoding="async"></div><h4>Слово-поезд и суффиксы профессий</h4><p>Как из одного корня получается должность</p></a>
+    <a class="tp rv" href="#s4"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#cal"/></svg></span><img class="cut" src="media/obj-typewriter.webp" alt="" width="900" height="761" loading="lazy" decoding="async"></div><h4>Годы работы</h4><p>Почему 2023'ten, но 2021'den</p></a>
+    <a class="tp rv" href="#s5"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#brief"/></svg></span><img class="cut" src="media/obj-laptop.webp" alt="" width="900" height="522" loading="lazy" decoding="async"></div><h4>Как написать про опыт</h4><p>olarak вместо gibi и "имею опыт"</p></a>
+    <a class="tp rv" href="#s7"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#bld"/></svg></span><img class="cut" src="media/man-coffee.webp" alt="" width="585" height="900" loading="lazy" decoding="async"></div><h4>Компания, в которой</h4><p>Слова который в турецком нет</p></a>
+    <a class="tp rv" href="#s9"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#mail"/></svg></span><img class="cut" src="media/student.webp" alt="" width="837" height="900" loading="lazy" decoding="async"></div><h4>Тон письма</h4><p>От просто вежливо до совсем официально</p></a>
+    <a class="tp rv" href="#s12"><div class="tp-p"><span class="bd"><svg class="ic"><use href="#pen"/></svg></span><img class="cut" src="media/woman-folder.webp" alt="" width="353" height="900" loading="lazy" decoding="async"></div><h4>Твоё письмо</h4><p>Подставь данные и забирай текст</p></a>
   </div>
 </div></div>
 
 <section><div class="wrap">
   <h2 class="c">Зачем это нужно, <span>если ты</span></h2>
   <div class="per">
-    <div class="pc s rv"><h4>Ищешь работу в Турции</h4><p>Вакансия на турецком. Отклик тоже должен быть на турецком.</p><svg class="art " viewBox="0 0 240 170" aria-hidden="true"><use href="#a-env"/></svg></div>
-    <div class="pc w rv"><h4>Возвращаешься после перерыва</h4><p>Пауза в работе объясняется одной грамотной фразой.</p><svg class="art " viewBox="0 0 200 260" aria-hidden="true"><use href="#a-cv"/></svg></div>
-    <div class="pc s rv"><h4>Уже работаешь</h4><p>Хочешь в компанию получше, и письмо должно это показать.</p><svg class="art " viewBox="0 0 280 190" aria-hidden="true"><use href="#a-lap"/></svg></div>
-    <div class="pc w rv"><h4>Идёшь на стажировку</h4><p>Опыта мало, поэтому каждое слово в резюме на счету.</p><svg class="art " viewBox="0 0 240 150" aria-hidden="true"><use href="#a-books"/></svg></div>
+    <div class="pc s rv"><h4>Ищешь работу в Турции</h4><p>Вакансия на турецком. Отклик тоже должен быть на турецком.</p><img class="cut" src="media/woman-folder.webp" alt="" width="353" height="900" loading="lazy" decoding="async"></div>
+    <div class="pc w rv"><h4>Возвращаешься после перерыва</h4><p>Пауза в работе объясняется одной грамотной фразой.</p><img class="cut" src="media/woman-chair.webp" alt="" width="871" height="900" loading="lazy" decoding="async"></div>
+    <div class="pc s rv"><h4>Уже работаешь</h4><p>Хочешь в компанию получше, и письмо должно это показать.</p><img class="cut" src="media/man-coffee.webp" alt="" width="585" height="900" loading="lazy" decoding="async"></div>
+    <div class="pc w rv"><h4>Идёшь на стажировку</h4><p>Опыта мало, поэтому каждое слово в резюме на счету.</p><img class="cut" src="media/student.webp" alt="" width="837" height="900" loading="lazy" decoding="async"></div>
   </div>
   <div class="stripn rv"><span class="bd"><svg class="ic"><use href="#tick"/></svg></span><span>Если хотя бы один пункт про тебя, дальше будет полезно.</span></div>
   <h3 class="mt2">Двенадцать слов <span class="w">без которых никак</span></h3>
@@ -698,7 +710,7 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <div class="gen-o" id="gO" lang="tr" aria-live="polite"></div>
     <div class="gen-b"><button class="btn s" id="gC" type="button"><svg class="ic"><use href="#doc"/></svg>Скопировать</button><button class="say" id="gS" aria-label="Послушать письмо"><svg class="ic"><use href="#sound"/></svg></button></div>
   </div>
-  <div class="split-r" aria-hidden="true"><svg class="art s3" viewBox="0 0 200 240" aria-hidden="true"><use href="#a-leaf"/></svg><svg class="art s2" viewBox="0 0 220 180" aria-hidden="true"><use href="#a-plane"/></svg><svg class="art s1" viewBox="0 0 240 170" aria-hidden="true"><use href="#a-env"/></svg></div>
+  <div class="split-r" aria-hidden="true"><svg class="art s2" viewBox="0 0 220 180" aria-hidden="true"><use href="#a-plane"/></svg><img class="s1" src="media/obj-typewriter.webp" alt="" width="900" height="761" loading="lazy" decoding="async"></div>
 </div>
 
 <section id="oshibki"><div class="wrap">
@@ -788,7 +800,7 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     <h2>Айше-ханым <span>не существует</span></h2>
     <p>Я её придумал. Папку тоже. Вы меня раскусили: это реклама.</p>
     <p>Но письмо из этого гайда настоящее. И ответ на него тоже может быть настоящим.</p>
-    <svg class="art " viewBox="0 0 240 170" aria-hidden="true"><use href="#a-env"/></svg>
+    <img class="cut" src="media/obj-laptop.webp" alt="" width="900" height="522" loading="lazy" decoding="async">
   </div>
 
   <div class="cards c2">
@@ -891,7 +903,7 @@ footer{padding:42px 18px 84px;text-align:center;color:var(--mute);font-size:14.5
     </div>
     <a class="wa" href="https://wa.me/message/RCHLEOGGLZ5OC1" target="_blank" rel="noopener"><span class="ni"><svg class="ic"><use href="#wapp"/></svg></span><span><b>Есть вопрос? Спроси в WhatsApp</b><small>Отвечу, что внутри и с чего начать</small></span></a>
   </div>
-  <div class="buy-r" aria-hidden="true"><svg class="art b3" viewBox="0 0 200 240" aria-hidden="true"><use href="#a-leaf"/></svg><svg class="art b2" viewBox="0 0 220 90" aria-hidden="true"><use href="#a-pen"/></svg><svg class="art b1" viewBox="0 0 240 150" aria-hidden="true"><use href="#a-books"/></svg></div>
+  <div class="buy-r" aria-hidden="true"><img class="b1" src="media/woman-folder.webp" alt="" width="353" height="900" loading="lazy" decoding="async"><img class="b2" src="media/obj-books.webp" alt="" width="900" height="490" loading="lazy" decoding="async"></div>
 </div>
 
 <section style="padding-top:56px"><div class="wrap">
